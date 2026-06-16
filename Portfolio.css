@@ -2,7 +2,25 @@
 
 body{
     text-align: center;
-    background-color:black;
+    background-image: url("");
+}
+.scrollWheel {
+  margin:-200px 0px 50px 0px;
+  height: 350px;
+  width: 350px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: inline-block;
+}
+h3{
+    color:silver;
+}
+
+.menu{
+    margin-bottom: 0%;
+}
+.enter{
+    
 }
 
 h1{
@@ -11,28 +29,35 @@ h1{
 
 .ipod{
     margin:auto;
-    background-color: #e0cece;
+    background-color:silver;
     width:65%;
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 10px 10px 10px 10px;
+    box-shadow: inset 2px -28px 80px -33px rgba(0, 0, 0, 0.74);
 }
 
 .utilities{
     width:100%;
     background-color: bisque;
-    /* border-radius: 10px; */
-    margin-top:-15px;
+    border-radius: 5px; 
+    margin-top:-16px;
 
 }
 
 .screen{
     margin:auto;
+    margin-top: 15px;
+    margin-bottom: 20%;
     border: solid 3px rgb(53, 52, 52);
     background-color:rgba(68, 62, 130, 0.895);
     background: linear-gradient(to bottom, #33ccff 0%, #000099 100%);
     /* padding: 10px; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width:95%;
+    width:83%;
     border-width: 5px;
+}
+.display{
+    
+    margin:75px 0px 75px 0px;
 }
