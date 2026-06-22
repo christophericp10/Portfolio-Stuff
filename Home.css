@@ -1,3 +1,30 @@
 body{
     background-color: black;
 }
+.navbar{
+    margin:auto;
+    display:inline;
+    cursor: pointer;
+    margin: 0px 100px 0px 10px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.record{
+    display:block;
+    margin:auto
+    
+}
+p{
+    text-align: center;
+    color:aliceblue;
+}
+
+h3{
+    /* margin:auto; */
+    color:aquamarine;
+    display:inline;
+}
+
+h3:hover{
+    color:#000099;
+}

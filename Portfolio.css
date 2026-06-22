@@ -1,13 +1,20 @@
 
-
+.navbar{
+    margin:auto;
+    display:inline;
+    cursor: pointer;
+    /* align-items: center;
+    justify-content: center; */
+}
 body{
+    background-color: rgb(215, 211, 211);
     text-align: center;
     background-image: url("");
 }
 .scrollWheel {
-  margin:-200px 0px 50px 0px;
-  height: 350px;
-  width: 350px;
+  margin: -50px 0px 50px 0px;
+  height: 300px;
+  width: 300px;
   background-color: #fafafa;
   border-radius: 50%;
   display: inline-block;
@@ -15,14 +22,28 @@ body{
 h3{
     color:silver;
 }
-
+h3:hover{
+    color:#000099;
+}
 .menu{
-    margin-bottom: 0%;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
 }
 .enter{
-    
+    cursor: pointer;
+    margin: 95px 0px 50px 0px;
 }
-
+.left{
+    text-align: left;
+    margin: 95px 20px 0px 10px;
+    cursor: pointer;
+}
+.right{
+    text-align: right;
+    margin: -20px 10px 0px 0px;
+    cursor: pointer;
+}
 h1{
     color:#ccc;
 }
@@ -30,7 +51,7 @@ h1{
 .ipod{
     margin:auto;
     background-color:silver;
-    width:65%;
+    width:50%;
     border-radius: 18px;
     padding: 10px 10px 10px 10px;
     box-shadow: inset 2px -28px 80px -33px rgba(0, 0, 0, 0.74);
@@ -38,7 +59,7 @@ h1{
 
 .utilities{
     width:100%;
-    background-color: bisque;
+    background-color: rgb(247, 241, 235);
     border-radius: 5px; 
     margin-top:-16px;
 
@@ -54,7 +75,7 @@ h1{
     /* padding: 10px; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width:83%;
+    width:75%;
     border-width: 5px;
 }
 .display{
