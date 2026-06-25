@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio</title>
-    </head>
-    <link rel="stylesheet" href="Home.css">
-    <script defer src="Home.js"></script>
-    
-    <body>
-        <div>
-            <div class="navbar">
-            <a href="http://127.0.0.1:3000/Home.html?vscode-livepreview=true" class="home"> Home </a>
-            </div>
 
-            <div class="navbar">               
-            <a href="" class="about"> About </a>
-            </div>
+<head>
+    <title>My Portfolio</title>
+</head>
+<link rel="stylesheet" href="Home.css">
+<script defer src="Home.js"></script>
 
-            <div class="navbar">
-            <a href="http://127.0.0.1:3000/Projects.html?vscode-livepreview=true" class="portfolio"> Portfolio </a>
-            </div>
+<body onload="typeWriter">
+    <!-- <ul>
+        <li><a href="http://127.0.0.1:3000/Home.html?vscode-livepreview=true">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        </ul>  -->
+    <div class="home">
+        <ul>
+        <li><a href="http://127.0.0.1:3000/Home.html?vscode-livepreview=true">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        </ul> 
+        <div class="name">
+            <h1 id="name"></h1>
+        <h1 id="name"></h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+        </div>
+    </div>
 
-            <img class="record" src="https://mir-s3-cdn-cf.behance.net/project_modules/source/8cfdf879936425.5cd284d4e4dd3.gif" alt="record player">
-            <p>tudyufuwfyufwd</p>
-        </div>    
-    </body>
+    <div id="portfolio">
+        <div  class="portfolio-content">
+            <h1>Portfolio</h1>
+        </div>
+    </div>
+<!-- http://127.0.0.1:3000/Projects.html?vscode-livepreview=true -->
+<!-- https://mir-s3-cdn-cf.behance.net/project_modules/source/8cfdf879936425.5cd284d4e4dd3.gif -->
+</body>
