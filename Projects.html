@@ -1,35 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio</title>
-    </head>
-    <link rel="stylesheet" href="Portfolio.css">
-    <script defer src="Portfolio.js"></script>
-    
-    <body>
-        <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Home.html#about">About</a></li>
-        </ul>
 
-        <div class="ipod">
-            <div class="screen">
-                <div class="utilities">
-                    <p>ygyg</p>
-                </div>
-                <h1 class="display">My Stuff!!!</h1>
+<head>
+    <title>My Portfolio</title>
+</head>
+<link rel="stylesheet" href="Portfolio.css">
+<script defer src="Portfolio.js"></script>
+
+<body onload="updateDisplay(); startTime()">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Home.html#about">About</a></li>
+    </ul>
+
+    <div class="ipod">
+        <div class="screen">
+
+            <div id="utilities">
+                <div id="txt"></div>
+
+                <div id="percent">50%</div>
             </div>
-            <div style="text-align:center">
+
+
+            <div class="imgs">
+
+                <div class="display-IMG">
+                    <img class="change" src="Cool-The-Planet.png" alt="Change Project">
+
+                    <img class="game" src="first-game.png" alt="Game Project">
+
+                    <img class="resume" src="Resume_Christopher Castellon-Perez.pdf.png" alt="Resume">
+
+                </div>
+
+                <div class="wrapper">
+
+                    <p class="one">
+                        Website For Change:
+                        <br>
+                        <br>
+                        Applied basic HTML and CSS to an informational website for climate change.
+                    </p>
+
+                    <p class="two">
+                        My First Game:
+                        <br>
+                        <br>
+                        Applied basic DOM manipulation and JavaScript to create a simple game.
+                    </p>
+
+                    <p class="three">
+                        Resume:
+                        <br>
+                        <br>
+                        If you want to learn more about me and what I do, please feel free to check out my resume.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div style="text-align:center">
             <!-- <h1>Round Dots / Circles</h1> -->
             <span class="scrollWheel">
                 <h3 class="menu">menu</h3>
                 <h3 class="left">left</h3>
                 <h3 class="right">right</h3>
-                <h3 class="enter">enter</h3>    
+                <h3 class="enter">enter</h3>
             </span>
-            </div>
-        </div>    
-    </body>
+        </div>
+    </div>
+</body>
 
 
 
