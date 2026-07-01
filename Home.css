@@ -1,5 +1,8 @@
 html{
     scroll-behavior: smooth;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,7 +12,8 @@ body{
 
 .home{
     /* background-color: black; */
-    margin-top: -105px;
+    /* margin-top: -315px; */
+    margin-top:-125px;
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/source/8cfdf879936425.5cd284d4e4dd3.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,15 +21,40 @@ body{
     min-height: 125vh;   
     box-sizing: border-box; 
     background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.name{
+
+  border-bottom: 1px solid #ccc;
+  margin: auto;
+  padding: 0;
+  width:500px;
+  position: relative;
+  z-index: 2;
+  top: 69vh;
+  /* background-color: transparent; */
+}
+#name{
+  
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    text-align: center;
+    color: aliceblue;
+    
 }
 #about{
-    margin-top: -16px;
+    
+    margin-top: 0px;
     border-top: 1px solid #ccc;
     padding: 0;
     background-color: rgb(57, 57, 57);
     background-size: cover;
     width: 100%;
-    min-height: 89vh;   
+    height: 89vh;
     box-sizing: border-box; 
     z-index: 1;
     display:flex;
@@ -140,7 +169,7 @@ body{
     background-color: rgb(4, 3, 18);
     background-size: cover;
     width: 100%;
-    min-height: 100vh;   
+    height: fit-content;  
     box-sizing: border-box; 
 }
 .portfolio-content{
@@ -154,21 +183,9 @@ body{
 .portfolio-content:hover{
     background-color: #000099;
 }
-.name{
-  border-bottom: 1px solid #ccc;
-  margin: 360px;
-  padding: 0;
-  /* background-color: transparent; */
-}
-#name{
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;    /* Centers vertically */
-    color: aliceblue;
-    
-}
-ul {
-  position: sticky;
+
+.nav {
+  position: fixed;
   display: flex;
   z-index: 10;
   top: 0;
@@ -180,11 +197,11 @@ ul {
   background-color: #333333;
 }
 
-ul li {
+.nav li {
   float: left;
 }
 
-ul li a {
+.nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -210,6 +227,9 @@ ul li a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.co:hover{
+    background-color: black;
+}
   .record{
     display:block;
     margin:auto
@@ -221,18 +241,32 @@ p{
 }
 .my-image {
     display: block;
-    margin: auto;
+    /* margin: auto; */
     width: 300px;
     height: 500px;
     border-radius: 10%;
 }
 
-/* h3{
-    /* margin:auto; 
-    color:aquamarine;
-    display:inline;
+#footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4, 3, 18);
+    color: white;
+    
 }
-
-h3:hover{
-    color:#000099;
-} */
+#footer-content{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+#footer-content p{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

@@ -1,10 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+margin: 0;
+padding: 0;
+}
+
 
 ul {
+  position: fixed;
+  top: 10px;   
+  left: 10px;
+  z-index: 1000;
+  border-radius: 10px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #7a7777;
 }
 
 ul li {
@@ -122,7 +135,7 @@ h1{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px;
+    margin: 40px 10px 20px 30px;
     width: 100px;
     height: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -135,6 +148,7 @@ h1{
     align-items: center;
     width: 200px;
     height: 150px;
+    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 10;
     border-radius: 10px;
@@ -164,4 +178,65 @@ h1{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+#contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(135, 125, 250);
+    color:aliceblue;
+    border-radius: 10px;
+}
+
+#footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+}
+#footer-content{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footer-content p{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#linkIN{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50px;
+    height:50px;
+    border-radius: 100px;
+}
+#github{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50px;
+    height:50px;
+    border-radius: 100px;
+}
+
+#links4{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:150px;
+    height:50px;
+    border-radius: 100px;
 }

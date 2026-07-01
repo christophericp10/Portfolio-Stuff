@@ -5,13 +5,21 @@ let enter = document.querySelector('.enter');
 let change = document.querySelector('.change');
 let game = document.querySelector('.game');
 let resume = document.querySelector('.resume');
+let img = document.querySelector('.display-IMG');
+let txt = document.querySelector('.wrapper');
 
 let pOne = document.querySelector('.one');
 let pTwo = document.querySelector('.two');
 let pThree = document.querySelector('.three');
+let pFour = document.querySelector('.four');
 
 let displayNum = 1;
 let link = 'http://127.0.0.1:3002/index.html?vscode-livepreview=true';
+
+menu.addEventListener('click', () => {
+    window.location.href = 'Home.html';
+
+})
 
 enter.addEventListener('click', () => {
     window.open(link, '_blank');
@@ -28,7 +36,7 @@ left.addEventListener('click', () => {
 })
 
 right.addEventListener('click', () => {
-    if (displayNum < 3) {
+    if (displayNum < 4) {
         displayNum++;
         updateDisplay();
     }
@@ -44,6 +52,7 @@ function updateDisplay() {
             pOne.style.display = 'inline';
             pTwo.style.display = 'none';
             pThree.style.display = 'none';
+            pFour.style.display = 'none';
 
             link = 'http://127.0.0.1:3002/index.html?vscode-livepreview=true';
         }
@@ -51,9 +60,12 @@ function updateDisplay() {
             change.style.display = 'none';
             game.style.display = 'inline';
             resume.style.display = 'none';
+
             pOne.style.display = 'none';
             pTwo.style.display = 'inline';
             pThree.style.display = 'none';
+            pFour.style.display = 'none';
+
             link = 'http://127.0.0.1:3004/index.html?vscode-livepreview=true';
         }
         else if (displayNum === 3) {
@@ -64,10 +76,24 @@ function updateDisplay() {
             pOne.style.display = 'none';
             pTwo.style.display = 'none';
             pThree.style.display = 'inline';
+            pFour.style.display = 'none';
+            img.style.display = 'inline';
+            txt.style.width = '200px'
 
             link = 'https://www.canva.com/design/DAHMvtEsWrA/U_Ng3X87Gc4bh2SpqkErGg/edit';
         }
-
+        else if (displayNum === 4) {
+            change.style.display = 'none';
+            game.style.display = 'none';
+            resume.style.display = 'none';
+            
+            pOne.style.display = 'none';
+            pTwo.style.display = 'none';
+            pThree.style.display = 'none';
+            pFour.style.display = 'inline';
+            img.style.display = 'none';
+            txt.style.width = '90%'
+        }
     }
 
 function startTime() {
