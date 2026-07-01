@@ -6,7 +6,7 @@ let i = 0;
 let txt = 'Christopher Castellon-Perez';
 let speed = 50;
 
-function typeWriter() {
+function typeWriter() { //uses an index variable and concatenates the txt variable to display my name with a typewriter effect with the timeout menthod.
   if (i < txt.length) {
     document.getElementById("name").innerHTML += txt.charAt(i);
     i++;

@@ -13,7 +13,7 @@ let pTwo = document.querySelector('.two');
 let pThree = document.querySelector('.three');
 let pFour = document.querySelector('.four');
 
-let displayNum = 1;
+let displayNum = 1; //variable that assigns each project with a different number
 let link = 'http://127.0.0.1:3002/index.html?vscode-livepreview=true';
 
 menu.addEventListener('click', () => {
@@ -44,7 +44,7 @@ right.addEventListener('click', () => {
 })
 
 function updateDisplay() {
-        if (displayNum === 1) {
+        if (displayNum === 1) { //displays the first project with a description
             change.style.display = 'inline';
             game.style.display = 'none';
             resume.style.display = 'none';
@@ -56,7 +56,7 @@ function updateDisplay() {
 
             link = 'http://127.0.0.1:3002/index.html?vscode-livepreview=true';
         }
-        else if (displayNum === 2) {
+        else if (displayNum === 2) { //displays the second project with a description
             change.style.display = 'none';
             game.style.display = 'inline';
             resume.style.display = 'none';
@@ -68,7 +68,7 @@ function updateDisplay() {
 
             link = 'http://127.0.0.1:3004/index.html?vscode-livepreview=true';
         }
-        else if (displayNum === 3) {
+        else if (displayNum === 3) { //displays the third project with a description
             change.style.display = 'none';
             game.style.display = 'none';
             resume.style.display = 'inline';
@@ -82,7 +82,7 @@ function updateDisplay() {
 
             link = 'https://www.canva.com/design/DAHMvtEsWrA/U_Ng3X87Gc4bh2SpqkErGg/edit';
         }
-        else if (displayNum === 4) {
+        else if (displayNum === 4) { // displays the sources while hiding the other projects
             change.style.display = 'none';
             game.style.display = 'none';
             resume.style.display = 'none';
@@ -96,7 +96,7 @@ function updateDisplay() {
         }
     }
 
-function startTime() {
+function startTime() { //uses the today.get method to make a clock and concatenates the different values together to make it look like a clock.
   const today = new Date();
   let h = today.getHours();
   let m = today.getMinutes();
@@ -107,7 +107,7 @@ function startTime() {
   setTimeout(startTime, 1000);
 }
 
-function checkTime(i) {
+function checkTime(i) { //ticking effect
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }

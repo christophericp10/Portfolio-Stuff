@@ -9,23 +9,25 @@
 
 <body onload="updateDisplay(); startTime()">
     
-    <ul>
+    <!-- navbar -->
+    <ul> 
         <li><a href="Home.html">Home</a></li>
         <li><a href="Home.html#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
     
-
+    <!-- Body of the Ipod which holds all the display and project elements. -->
     <div class="ipod">
         <div class="screen">
 
+            <!-- Extra elements to make it look like an ipod like a clock and battery percentage. -->
             <div id="utilities">
                 <div id="txt"></div>
 
                 <div id="percent">50%</div>
             </div>
 
-
+            <!-- Display of the different projects  -->
             <div class="imgs">
 
                 <div class="display-IMG">
@@ -39,6 +41,7 @@
 
                 <div class="wrapper">
 
+                    <!-- project one -->
                     <p class="one">
                         Website For Change:
                         <br>
@@ -46,6 +49,7 @@
                         Applied basic HTML and CSS to an informational website for climate change.
                     </p>
 
+                    <!-- project two -->
                     <p class="two">
                         My First Game:
                         <br>
@@ -53,6 +57,7 @@
                         Applied basic DOM manipulation and JavaScript to create a simple game.
                     </p>
 
+                    <!-- project three -->
                     <p class="three">
                         Resume:
                         <br>
@@ -60,6 +65,7 @@
                         If you want to learn more about me and what I do, please feel free to check out my resume.
                     </p>
 
+                    <!-- sources -->
                     <p class="four">
                         Sources: W3Schools
                         <br>
@@ -72,7 +78,8 @@
             </div>
         </div>
         <div style="text-align:center">
-            <!-- <h1>Round Dots / Circles</h1> -->
+            
+            <!-- controls for ipod display -->
             <span class="scrollWheel">
                 <h3 class="menu">menu</h3>
                 <h3 class="left">left</h3>
@@ -84,9 +91,29 @@
 
     <div id="contact">
         <h1>Contact Me</h1>
-        <p><a href="mailto:christopher.castellonperez@gmail.com">christopher.castellonperez@gmail.com</a></p>
+        
+        <form class="contact-form" action="https://formspree.io/f/xjgqaazd" method="POST">  
+            <label>
+                Name:
+            <input type="text" id="name" name="name" required>
+                </label>
+
+            <label>
+                Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label>
+                Message(optional):
+                <textarea id="message" name="message" ></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
 
         <div id="links4">
+
+            <!-- link to my LinkedIn profile -->
         <div id="linkIN">
             <a href="https://www.linkedin.com/feed/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png?_=20140125013055"
@@ -94,12 +121,14 @@
             </a>
         </div>
         
+        <!-- link to my GitHub profile -->
         <span id="github">
             <a href="https://github.com/christophericp10" target="_blank">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS39ZxR9xnm-UpxJCqNmPodq9yi5Y4IpHg0dB24Gzw2Vw&s=10"
                     alt="GitHub Logo" Class="github-logo" style="width: 30px; height: 30px;" class="github-logo">
             </a>
         </span>
+
         </div>
 
     </div>
