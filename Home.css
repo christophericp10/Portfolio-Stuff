@@ -58,6 +58,8 @@ body{
     box-sizing: border-box; 
     z-index: 1;
     display:flex;
+    overflow: hidden;
+    /* flex-direction: row; */
     /* background-image: url('https://thumbs.dreamstime.com/b/black-cassette-tape-appears-to-float-against-starry-black-background-black-cassette-tape-appears-to-float-against-starry-368718932.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
@@ -70,6 +72,7 @@ body{
 .container{
   display: flex;
   flex-direction: column;
+  gap: 20px;
   unicode-bidi: isolate;
   display:flex;
   width:50%;
