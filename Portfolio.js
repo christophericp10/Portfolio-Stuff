@@ -54,7 +54,7 @@ function updateDisplay() {
             pThree.style.display = 'none';
             pFour.style.display = 'none';
 
-            link = 'http://127.0.0.1:3002/index.html?vscode-livepreview=true';
+            link = 'https://christophericp10.github.io/int-u2-project-starter-code-2/';
         }
         else if (displayNum === 2) { //displays the second project with a description
             change.style.display = 'none';
@@ -66,7 +66,7 @@ function updateDisplay() {
             pThree.style.display = 'none';
             pFour.style.display = 'none';
 
-            link = 'http://127.0.0.1:3004/index.html?vscode-livepreview=true';
+            link = 'https://christophericp10.github.io/int-u3-project-23-24-starter-code/';
         }
         else if (displayNum === 3) { //displays the third project with a description
             change.style.display = 'none';
